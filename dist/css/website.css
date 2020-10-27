@@ -152,6 +152,48 @@ header .wrapper .nav-container nav ul li a.btn svg {
   right: 1.5rem;
 }
 
+footer .separator {
+  height: 12px;
+  width: 100%;
+  background: linear-gradient(90deg, #E88714 -0.19%, #F6A950 63.1%);
+}
+footer .wrapper {
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+}
+footer .wrapper .legal-text-container p, footer .wrapper .social-networks-container p {
+  color: #353132;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.6;
+  opacity: 0.6;
+}
+footer .wrapper .legal-text-container p strong, footer .wrapper .social-networks-container p strong {
+  font-weight: 700;
+}
+footer .wrapper .legal-text-container p a, footer .wrapper .social-networks-container p a {
+  text-decoration: underline;
+  color: inherit;
+}
+footer .wrapper .legal-text-container p a:hover, footer .wrapper .social-networks-container p a:hover {
+  text-decoration: none;
+}
+footer .wrapper .legal-text-container {
+  flex: 1;
+}
+footer .wrapper .social-networks-container ul {
+  margin-top: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+footer .wrapper .social-networks-container ul li {
+  margin-left: 1.5rem;
+}
+footer .wrapper .social-networks-container ul li:first-child {
+  margin-left: 0;
+}
+
 .hero {
   background: linear-gradient(180deg, #8FD1F5 0%, #FFFFFF 100%), #C4C4C4;
   background-size: cover;

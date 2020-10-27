@@ -1,0 +1,53 @@
+@use '../config/sizes';
+@use '../config/fonts';
+@use '../config/colors';
+
+footer {
+  .separator {
+    height: 12px;
+    width: 100%;
+    background: linear-gradient(90deg, #E88714 -0.19%, #F6A950 63.1%);
+  }
+
+  .wrapper {
+    padding: sizes.$xs 0;
+    display: flex;
+    align-items: center;
+
+    .legal-text-container, .social-networks-container {
+      p {
+        @include fonts.text(colors.$black, 400, sizes.$xxxs);
+        opacity: .6;
+
+        a {
+          text-decoration: underline;
+          color: inherit;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .legal-text-container {
+      flex: 1;
+    }
+
+    .social-networks-container {
+      ul {
+        margin-top: sizes.$xxxs;
+        display: flex;
+        align-items: center;
+
+        li {
+          margin-left: sizes.$xs;
+
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
