@@ -87,6 +87,10 @@ h1, h2, h3, h4, h5, h6, p, li, span, a, label, input, textarea, select, blockquo
   max-width: 90%;
   margin: auto;
 }
+.wrapper .text-container {
+  max-width: 760px;
+  margin: auto;
+}
 
 header {
   position: relative;
@@ -143,38 +147,134 @@ header .wrapper .nav-container nav ul li a.btn {
 
 .hero {
   background: linear-gradient(180deg, #8FD1F5 0%, #FFFFFF 100%), #C4C4C4;
-  height: 95vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
   position: relative;
 }
-.hero .wrapper {
-  position: relative;
-  z-index: 1;
-}
-.hero .wrapper .text-container {
-  max-width: 760px;
-  margin: auto;
+.hero h1 {
   padding-top: 6rem;
-}
-.hero .wrapper .text-container h1 {
   text-align: center;
+  margin: auto;
   color: #353132;
   font-weight: 400;
   font-size: 2rem;
   line-height: 1.6;
   text-transform: uppercase;
+  max-width: 760px;
 }
-.hero .wrapper .text-container h1 strong {
+.hero h1 strong {
   font-weight: 700;
 }
-.hero .wrapper .text-container .product-mockup {
-  margin: auto;
+.hero .product-mockup {
   margin-top: 6rem;
-}
-.hero .sand-bg {
-  mix-blend-mode: multiply;
-  position: absolute;
-  bottom: 0;
   width: 100%;
+}
+
+.sand {
+  background: linear-gradient(90deg, #EEC47C 0%, #F6D085 100%);
+}
+.sand .wrapper .text-container {
+  padding-top: 3rem;
+  text-align: center;
+}
+.sand .wrapper .text-container p {
+  color: #353132;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0.6;
+  margin-bottom: 1.5rem;
+}
+.sand .wrapper .text-container p strong {
+  font-weight: 700;
+}
+.sand .wrapper .text-container a {
+  color: #353132;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+.sand .wrapper .text-container a strong {
+  font-weight: 700;
+}
+.sand .wrapper .text-container a .chevron {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.sand .wrapper .text-container a .chevron svg {
+  width: 21px;
+}
+.sand .wrapper .text-container a .chevron svg:first-child {
+  opacity: 0.4;
+}
+.sand .wrapper .text-container a .chevron svg:nth-child(2) {
+  opacity: 0.6;
+}
+.sand .wrapper .text-container a .chevron svg:last-child {
+  opacity: 0.8;
+}
+
+.video.sand-bg {
+  background-image: url("../../assets/img/bg/sand.jpg"), linear-gradient(293.08deg, #DE9845 29.88%, #EFA542 100%);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.video .wrapper .text-container {
+  padding-top: 4rem;
+}
+.video .wrapper .text-container video {
+  width: 100%;
+  border-radius: 1rem;
+}
+.video .wrapper .text-container .benefits {
+  padding-top: 8rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.video .wrapper .text-container .benefits li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.video .wrapper .text-container .benefits li .icon {
+  background-color: #ffffff;
+  width: 52px;
+  height: 52px;
+  border-radius: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+.video .wrapper .text-container .benefits li .icon svg {
+  width: 24px;
+}
+.video .wrapper .text-container .benefits li .text h6 {
+  color: #353132;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.video .wrapper .text-container .benefits li .text h6 strong {
+  font-weight: 700;
+}
+.video .wrapper .text-container .benefits li .text p {
+  color: #353132;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0.6;
+}
+.video .wrapper .text-container .benefits li .text p strong {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=website.css.map */

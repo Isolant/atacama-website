@@ -1,0 +1,50 @@
+@use '../config/fonts';
+@use '../config/colors';
+@use '../config/sizes';
+
+.sand {
+  background: linear-gradient(90deg, #EEC47C 0%, #F6D085 100%);
+
+  .wrapper {
+    .text-container {
+      padding-top: sizes.$m;
+      text-align: center;
+
+      p {
+        @include fonts.text(colors.$black, 400, 18px);
+        opacity: .6;
+        margin-bottom: sizes.$xs;
+      }
+      
+      a {
+        @include fonts.text(colors.$black, 600, 14px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: sizes.$m;
+
+        .chevron {
+          margin-top: sizes.$xxs;
+          display: flex;
+          flex-direction: column;
+
+          svg {
+            width: 21px;
+
+            &:first-child {
+              opacity: .4;
+            }
+            
+            &:nth-child(2) {
+              opacity: .6;
+            }
+            
+            &:last-child {
+              opacity: .8;
+            }
+          }
+        }
+      }
+    }
+  }
+}
