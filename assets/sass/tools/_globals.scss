@@ -1,0 +1,27 @@
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a, button {
+  transition: all .3s ease-in-out;
+  text-decoration: none;
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}

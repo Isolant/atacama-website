@@ -1,0 +1,12 @@
+@use '../config/sizes';
+
+@mixin button($background, $border, $font) {
+	background: $background;
+	border: 1px solid $border;
+	color: $font;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 14px;
+	border-radius: 6px;
+	padding: sizes.$xxs sizes.$xs;
+}

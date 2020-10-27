@@ -1,0 +1,54 @@
+@use '../config/sizes';
+@use '../config/fonts';
+@use '../config/colors';
+
+@use '../components/buttons';
+
+header {
+  position: relative;
+  background-image: url('../../assets/img/bg/header.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  
+  .wrapper {
+    display: flex;
+    align-items: center;
+    min-height: 90px;
+    
+    .logo-container {
+      position: absolute;
+      top: sizes.$xs;
+    }
+    
+    .nav-container {
+      flex: 1;
+
+      nav {
+        ul {
+          display: flex;
+          justify-content: flex-end;
+          position: relative;
+          top: -2px;
+
+          li {
+            margin-left: sizes.$s;
+
+            a {
+              @include fonts.text(colors.$white, 400, sizes.$xxs);
+
+              &.active {
+                color: #F6A950;
+                font-weight: 600;
+              }
+
+              &.btn {
+                @include buttons.button(linear-gradient(90deg, #E88714 -56.14%, #F6A950 42.5%), transparent, colors.$white);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

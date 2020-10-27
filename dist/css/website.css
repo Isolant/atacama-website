@@ -1,0 +1,140 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a, button {
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+a:hover, button:hover {
+  opacity: 0.8;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, span, a, label, input, textarea, select, blockquote, strong, table, div, article, section {
+  font-family: "Inter", sans-serif;
+}
+
+.wrapper {
+  max-width: 90%;
+  margin: auto;
+}
+
+header {
+  position: relative;
+  background-image: url("../../assets/img/bg/header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+header .wrapper {
+  display: flex;
+  align-items: center;
+  min-height: 90px;
+}
+header .wrapper .logo-container {
+  position: absolute;
+  top: 1.5rem;
+}
+header .wrapper .nav-container {
+  flex: 1;
+}
+header .wrapper .nav-container nav ul {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: -2px;
+}
+header .wrapper .nav-container nav ul li {
+  margin-left: 2rem;
+}
+header .wrapper .nav-container nav ul li a {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+header .wrapper .nav-container nav ul li a.active {
+  color: #F6A950;
+  font-weight: 600;
+}
+header .wrapper .nav-container nav ul li a.btn {
+  background: linear-gradient(90deg, #E88714 -56.14%, #F6A950 42.5%);
+  border: 1px solid transparent;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 1rem 1.5rem;
+}
+
+/*# sourceMappingURL=website.css.map */
