@@ -1,0 +1,64 @@
+@use '../config/fonts';
+@use '../config/colors';
+@use '../config/sizes';
+
+@use '../components/buttons';
+
+.company {
+  position: relative;
+  background: linear-gradient(181.92deg, #FFFFFF 1.47%, #EFEFF0 98.26%);
+
+  .separator {
+    height: 12px;
+    width: 100%;
+    background: linear-gradient(90deg, #231F20 -0.19%, #5A5758 63.1%);
+  }
+
+  .wrapper {
+    .logo-atacama {
+      width: 400px;
+      position: absolute;
+      left: 50%;
+      margin-left: -200px;
+      top: -200px;
+    }
+
+    .text-container {
+      margin-top: 300px;
+
+      .logos {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: sizes.$m;
+      }
+
+      p {
+        @include fonts.text(colors.$black, 400, sizes.$xxs);
+        max-width: 620px;
+        margin: auto;
+        margin-bottom: sizes.$xxs;
+        opacity: .6;
+        text-align: center;
+      }
+
+      a {
+        @include buttons.button(transparent, colors.$orange, colors.$orange);
+        display: block;
+        border-radius: 0;
+        margin: auto;
+        margin-top: sizes.$m;
+        max-width: 200px;
+
+        svg {
+          fill: colors.$orange;
+        }
+      }
+    }
+  }
+
+  .sand-separator {
+    width: 100%;
+    margin-top: sizes.$l;
+  }
+}

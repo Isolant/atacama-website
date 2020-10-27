@@ -143,6 +143,13 @@ header .wrapper .nav-container nav ul li a.btn {
   font-size: 14px;
   border-radius: 6px;
   padding: 1rem 1.5rem;
+  position: relative;
+}
+header .wrapper .nav-container nav ul li a.btn svg {
+  margin-left: 1rem;
+  width: 19px;
+  position: absolute;
+  right: 1.5rem;
 }
 
 .hero {
@@ -255,7 +262,7 @@ header .wrapper .nav-container nav ul li a.btn {
 .video .wrapper .text-container .benefits li .icon svg {
   width: 24px;
 }
-.video .wrapper .text-container .benefits li .text h6 {
+.video .wrapper .text-container .benefits li .text h3 {
   color: #353132;
   font-weight: 700;
   font-size: 18px;
@@ -263,7 +270,7 @@ header .wrapper .nav-container nav ul li a.btn {
   text-transform: uppercase;
   line-height: 1;
 }
-.video .wrapper .text-container .benefits li .text h6 strong {
+.video .wrapper .text-container .benefits li .text h3 strong {
   font-weight: 700;
 }
 .video .wrapper .text-container .benefits li .text p {
@@ -275,6 +282,149 @@ header .wrapper .nav-container nav ul li a.btn {
 }
 .video .wrapper .text-container .benefits li .text p strong {
   font-weight: 700;
+}
+.video .mountains {
+  width: 100%;
+}
+
+.features {
+  background: linear-gradient(270deg, #CF4601 0%, #9F2601 72.5%, #992201 82.85%);
+}
+.features .wrapper {
+  padding-bottom: 12rem;
+}
+.features .wrapper .text-container {
+  padding-bottom: 6rem;
+}
+.features .wrapper .text-container .feature-list li {
+  display: flex;
+  align-items: center;
+  padding-bottom: 6rem;
+}
+.features .wrapper .text-container .feature-list li .icon {
+  background-color: #ffffff;
+  flex-basis: 152px;
+  height: 152px;
+  width: 100%;
+  border-radius: 152px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.25rem solid #353132;
+  margin-right: 1.5rem;
+}
+.features .wrapper .text-container .feature-list li .text {
+  flex: 1;
+}
+.features .wrapper .text-container .feature-list li .text h3 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+.features .wrapper .text-container .feature-list li .text h3 strong {
+  font-weight: 700;
+}
+.features .wrapper .text-container .feature-list li .text p {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0.6;
+}
+.features .wrapper .text-container .feature-list li .text p strong {
+  font-weight: 700;
+}
+.features .wrapper .text-container .feature-list li .text a {
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 1rem 1.5rem;
+  position: relative;
+  display: inline-block;
+  border-radius: 0;
+  margin-top: 1rem;
+  min-width: 320px;
+}
+.features .wrapper .text-container .feature-list li .text a svg {
+  margin-left: 1rem;
+  width: 19px;
+  position: absolute;
+  right: 1.5rem;
+}
+
+.company {
+  position: relative;
+  background: linear-gradient(181.92deg, #FFFFFF 1.47%, #EFEFF0 98.26%);
+}
+.company .separator {
+  height: 12px;
+  width: 100%;
+  background: linear-gradient(90deg, #231F20 -0.19%, #5A5758 63.1%);
+}
+.company .wrapper .logo-atacama {
+  width: 400px;
+  position: absolute;
+  left: 50%;
+  margin-left: -200px;
+  top: -200px;
+}
+.company .wrapper .text-container {
+  margin-top: 300px;
+}
+.company .wrapper .text-container .logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+.company .wrapper .text-container p {
+  color: #353132;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 620px;
+  margin: auto;
+  margin-bottom: 1rem;
+  opacity: 0.6;
+  text-align: center;
+}
+.company .wrapper .text-container p strong {
+  font-weight: 700;
+}
+.company .wrapper .text-container a {
+  background: transparent;
+  border: 1px solid #FF6600;
+  color: #FF6600;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 1rem 1.5rem;
+  position: relative;
+  display: block;
+  border-radius: 0;
+  margin: auto;
+  margin-top: 3rem;
+  max-width: 200px;
+}
+.company .wrapper .text-container a svg {
+  margin-left: 1rem;
+  width: 19px;
+  position: absolute;
+  right: 1.5rem;
+}
+.company .wrapper .text-container a svg {
+  fill: #FF6600;
+}
+.company .sand-separator {
+  width: 100%;
+  margin-top: 4rem;
 }
 
 /*# sourceMappingURL=website.css.map */

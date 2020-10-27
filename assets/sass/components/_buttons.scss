@@ -9,4 +9,12 @@
 	font-size: 14px;
 	border-radius: 6px;
 	padding: sizes.$xxs sizes.$xs;
+	position: relative;
+
+	svg {
+		margin-left: sizes.$xxs;
+		width: 19px;
+		position: absolute;
+		right: sizes.$xs;
+	}
 }

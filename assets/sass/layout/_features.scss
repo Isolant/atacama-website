@@ -1,0 +1,60 @@
+@use '../config/fonts';
+@use '../config/colors';
+@use '../config/sizes';
+
+@use '../components/buttons';
+
+.features {
+  background: linear-gradient(270deg, #CF4601 0%, #9F2601 72.5%, #992201 82.85%);
+
+  .wrapper {
+    padding-bottom: sizes.$xxxl;
+    
+    .text-container {
+      padding-bottom: sizes.$xl;
+
+      .feature-list {
+        li {
+          display: flex;
+          align-items: center;
+          padding-bottom: sizes.$xl;
+
+          .icon {
+            background-color: colors.$white;
+            flex-basis: 152px;
+            height: 152px;
+            width: 100%;
+            border-radius: 152px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: .25rem solid colors.$black;
+            margin-right: sizes.$xs;
+          }
+
+          .text {
+            flex: 1;
+            
+            h3 {
+              @include fonts.text(colors.$white, 700, 18px);
+              text-transform: uppercase;
+            }
+            
+            p {
+              @include fonts.text(colors.$white, 400, 18px);
+              opacity: .6;
+            }
+
+            a {
+              @include buttons.button(transparent, colors.$white, colors.$white);
+              display: inline-block;
+              border-radius: 0;
+              margin-top: sizes.$xxs;
+              min-width: 320px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

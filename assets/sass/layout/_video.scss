@@ -44,7 +44,7 @@
           }
 
           .text {
-            h6 {
+            h3 {
               @include fonts.text(colors.$black, 700, 18px);
               text-transform: uppercase;
               line-height: 1;
@@ -58,5 +58,9 @@
         }
       }
     }
+  }
+
+  .mountains {
+    width: 100%;
   }
 }
