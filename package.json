@@ -1,0 +1,27 @@
+{
+  "name": "atacama-website",
+  "version": "1.0.0",
+  "description": "Landing page for Isolant's Atacama product",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass assets/sass/website.scss dist/css/website.css",
+    "watch:serve": "browser-sync start --server --files '*.html, *.scss, css/*.css'",
+    "watch:sass": "npm run sass -- --watch",
+    "start": "npm-run-all --parallel watch:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/isolant1/atacama-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/isolant1/atacama-website/issues"
+  },
+  "homepage": "https://gitlab.com/isolant1/atacama-website#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.26.8"
+  }
+}
