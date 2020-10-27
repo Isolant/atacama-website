@@ -1,0 +1,38 @@
+@use '../config/fonts';
+@use '../config/colors';
+@use '../config/sizes';
+
+.hero {
+  background: linear-gradient(180deg, #8FD1F5 0%, #FFFFFF 100%), #C4C4C4;
+  height: 95vh;
+  position: relative;
+
+  .wrapper {
+    position: relative;
+    z-index: 1;
+
+    .text-container {
+      max-width: 760px;
+      margin: auto;
+      padding-top: sizes.$xl;
+
+      h1 {
+        text-align: center;
+        @include fonts.text(colors.$black, 400, sizes.$s);
+        text-transform: uppercase;
+      }
+
+      .product-mockup {
+        margin: auto;
+        margin-top: sizes.$xl;
+      }
+    }
+  }
+  
+  .sand-bg {
+    mix-blend-mode: multiply;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}

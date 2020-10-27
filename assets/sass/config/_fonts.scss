@@ -7,4 +7,8 @@ h1, h2, h3, h4, h5, h6, p, li, span, a, label, input, textarea, select, blockquo
 	font-weight: $weight;
 	font-size: $size;
 	line-height: 1.6;
+
+	strong {
+		font-weight: 700;
+	}
 }

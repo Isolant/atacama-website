@@ -94,6 +94,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
+  z-index: 1;
 }
 header .wrapper {
   display: flex;
@@ -122,6 +123,9 @@ header .wrapper .nav-container nav ul li a {
   font-size: 1rem;
   line-height: 1.6;
 }
+header .wrapper .nav-container nav ul li a strong {
+  font-weight: 700;
+}
 header .wrapper .nav-container nav ul li a.active {
   color: #F6A950;
   font-weight: 600;
@@ -135,6 +139,42 @@ header .wrapper .nav-container nav ul li a.btn {
   font-size: 14px;
   border-radius: 6px;
   padding: 1rem 1.5rem;
+}
+
+.hero {
+  background: linear-gradient(180deg, #8FD1F5 0%, #FFFFFF 100%), #C4C4C4;
+  height: 95vh;
+  position: relative;
+}
+.hero .wrapper {
+  position: relative;
+  z-index: 1;
+}
+.hero .wrapper .text-container {
+  max-width: 760px;
+  margin: auto;
+  padding-top: 6rem;
+}
+.hero .wrapper .text-container h1 {
+  text-align: center;
+  color: #353132;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+.hero .wrapper .text-container h1 strong {
+  font-weight: 700;
+}
+.hero .wrapper .text-container .product-mockup {
+  margin: auto;
+  margin-top: 6rem;
+}
+.hero .sand-bg {
+  mix-blend-mode: multiply;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 /*# sourceMappingURL=website.css.map */
