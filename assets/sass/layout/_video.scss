@@ -2,13 +2,13 @@
 @use '../config/colors';
 @use '../config/sizes';
 
-.video {
-  &.sand-bg {
-    background-image: url('../../assets/img/bg/sand.jpg'), linear-gradient(293.08deg, #DE9845 29.88%, #EFA542 100%);
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
+.sand-bg {
+  background-image: url('../../assets/img/bg/sand.jpg'), linear-gradient(90.18deg, #EBA03F 0.08%, #ECA13F 37.26%, #DD9844 99.76%);;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
 
+.video {
   .wrapper {
     .text-container {
       padding-top: sizes.$l;
