@@ -1,16 +1,121 @@
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isolant Aislantes - Atacama</title>
-    <!-- favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="theme-color" content="#ffffff">
-  </head>
-  <body style="display: flex; align-items: center; justify-content: center; height: 100vh;">
-    <img src="apple-touch-icon.png" alt="Isolant Aislantes" width="90" />
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instrucciones de Colocación - Atacama</title>
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+  <!-- styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/css/website.css" type="text/css">
+</head>
+
+<body id="top">
+  <!-- header -->
+  <header>
+    <div class="wrapper">
+      <div class="logo-container">
+        <a href="/">
+          <img src="assets/img/logo/atacama.svg" alt="Logo de Atacama" />
+        </a>
+      </div>
+      <div class="nav-container">
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Producto</a>
+            </li>
+            <li>
+              <a href="colocacion.html" class="active">Colocaci&oacute;n</a>
+            </li>
+            <li>
+              <a href="hormigaplateada.html">Hormiga Plateada</a>
+            </li>
+            <li>
+              <a href="index.html#company">¿Qui&eacute;nes somos?</a>
+            </li>
+            <li>
+              <a href="contacto.html">Contacto</a>
+            </li>
+            <li>
+              <a href="contacto.html" target="_blank" rel="noopener noreferrer" class="btn">Comprar</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- hero -->
+  <section class="hero hero-colocacion">
+    <div class="wrapper">
+      <div class="hero-container">
+        <div class="image-container">
+          <img src="assets/img/installation/main-image.png"
+            alt="Foto de una persona, con un rodillo, aplicando Atacama sobre una losa"
+            srcset="assets/img/installation/main-image.png 1x, assets/img/installation/main-image@2x.png 2x">
+        </div>
+        <div class="text">
+          <h1><strong>¡Aplicalo vos mismo</strong> sobre chapas, terrazas y muros!</h1>
+          <div class="installation-container">
+            <img src="assets/img/installation/tools.png"
+              alt="Ilustración de las herramientas que pueden utilizarse para instalar Atacama"
+              srcset="assets/img/installation/tools.png 1x, assets/img/installation/tools@2x.png 2x">
+            <p>
+              Con rodillo sint&eacute;tico, pinceleta o pistola <em>airless</em>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="assets/img/bg/contact-sand.png" alt="Ilustración de unas dunas de arena"
+      srcset="assets/img/bg/contact-sand.png 1x, assets/img/bg/contact-sand@2x.png 2x" class="product-mockup">
+    <a href="#preparation" class="know-more">
+      Conoc&eacute; m&aacute;s
+      <div class="chevron">
+        <svg width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M5.11731 6.75253L0 1.63507L0.664857 0.969023L1.32971 0.302979L5.78233 4.75541C8.23127 7.20426 10.2555 9.20785 10.2807 9.20785C10.3058 9.20785 12.3247 7.2096 14.7671 4.76729L19.2079 0.326725L19.8619 0.980698L20.5158 1.63468L15.3983 6.75233C12.5837 9.56704 10.2704 11.87 10.2577 11.87C10.245 11.87 7.93183 9.56713 5.11731 6.75253Z"
+            fill="url(#paint0_linear)" />
+          <defs>
+            <linearGradient id="paint0_linear" x1="-0.150535" y1="-9.56501" x2="21.3545" y2="-9.56501"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#231F20" />
+              <stop offset="1" stop-color="#5A5758" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <svg width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M5.11731 6.75253L0 1.63507L0.664857 0.969023L1.32971 0.302979L5.78233 4.75541C8.23127 7.20426 10.2555 9.20785 10.2807 9.20785C10.3058 9.20785 12.3247 7.2096 14.7671 4.76729L19.2079 0.326725L19.8619 0.980698L20.5158 1.63468L15.3983 6.75233C12.5837 9.56704 10.2704 11.87 10.2577 11.87C10.245 11.87 7.93183 9.56713 5.11731 6.75253Z"
+            fill="url(#paint0_linear)" />
+          <defs>
+            <linearGradient id="paint0_linear" x1="-0.150535" y1="-9.56501" x2="21.3545" y2="-9.56501"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#231F20" />
+              <stop offset="1" stop-color="#5A5758" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <svg width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M5.11731 6.75253L0 1.63507L0.664857 0.969023L1.32971 0.302979L5.78233 4.75541C8.23127 7.20426 10.2555 9.20785 10.2807 9.20785C10.3058 9.20785 12.3247 7.2096 14.7671 4.76729L19.2079 0.326725L19.8619 0.980698L20.5158 1.63468L15.3983 6.75233C12.5837 9.56704 10.2704 11.87 10.2577 11.87C10.245 11.87 7.93183 9.56713 5.11731 6.75253Z"
+            fill="url(#paint0_linear)" />
+          <defs>
+            <linearGradient id="paint0_linear" x1="-0.150535" y1="-9.56501" x2="21.3545" y2="-9.56501"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#231F20" />
+              <stop offset="1" stop-color="#5A5758" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+    </a>
+  </section>
+</body>
+
 </html>

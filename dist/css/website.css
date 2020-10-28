@@ -237,6 +237,42 @@ footer .wrapper .social-networks-container ul li:first-child {
 .hero .sand-illustration {
   width: 100%;
 }
+.hero.hero-colocacion .wrapper .hero-container {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  grid-gap: 2rem;
+  align-items: center;
+  padding-top: 12rem;
+}
+.hero.hero-colocacion .wrapper .hero-container .text h1 {
+  padding-top: 0;
+  text-align: left;
+  line-height: 1.3;
+}
+.hero.hero-colocacion .wrapper .hero-container .text .installation-container {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.hero.hero-colocacion .wrapper .hero-container .text .installation-container img {
+  margin-right: 1.5rem;
+}
+.hero.hero-colocacion .wrapper .hero-container .text .installation-container p {
+  text-align: left;
+  margin: 0;
+  max-width: 100%;
+  flex: 1;
+  max-width: 240px;
+}
+.hero.hero-colocacion .wrapper .hero-container .text .installation-container p em {
+  font-style: italic;
+}
+.hero.hero-colocacion .know-more {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  margin-left: -42px;
+}
 
 .sand {
   background: linear-gradient(90deg, #EEC47C 0%, #F6D085 100%);
@@ -256,7 +292,8 @@ footer .wrapper .social-networks-container ul li:first-child {
 .sand .wrapper .text-container p strong {
   font-weight: 700;
 }
-.sand .wrapper .text-container a {
+
+.know-more {
   color: #353132;
   font-weight: 600;
   font-size: 14px;
@@ -266,24 +303,24 @@ footer .wrapper .social-networks-container ul li:first-child {
   align-items: center;
   margin-top: 3rem;
 }
-.sand .wrapper .text-container a strong {
+.know-more strong {
   font-weight: 700;
 }
-.sand .wrapper .text-container a .chevron {
+.know-more .chevron {
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
 }
-.sand .wrapper .text-container a .chevron svg {
+.know-more .chevron svg {
   width: 21px;
 }
-.sand .wrapper .text-container a .chevron svg:first-child {
+.know-more .chevron svg:first-child {
   opacity: 0.4;
 }
-.sand .wrapper .text-container a .chevron svg:nth-child(2) {
+.know-more .chevron svg:nth-child(2) {
   opacity: 0.6;
 }
-.sand .wrapper .text-container a .chevron svg:last-child {
+.know-more .chevron svg:last-child {
   opacity: 0.8;
 }
 
