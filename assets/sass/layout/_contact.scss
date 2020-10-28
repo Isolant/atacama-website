@@ -1,0 +1,51 @@
+@use '../config/fonts';
+@use '../config/colors';
+@use '../config/sizes';
+
+@use '../components/buttons';
+@use '../components/inputs';
+
+.contact-form {
+  max-width: 820px;
+  margin: auto;
+  margin-top: sizes.$l;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: sizes.$m;
+
+  .input-container {
+    label {
+      display: block;
+      @include fonts.text(colors.$black, 600, sizes.$xxxs);
+      margin-bottom: sizes.$xxxs;
+      text-transform: uppercase;
+    }
+
+    input, select, textarea {
+      @include inputs.input(colors.$white, #E1E1E1, colors.$black);
+    }
+
+    textarea {
+      resize: none;
+      height: 120px;
+    }
+
+    &.last {
+      grid-column: span 2;
+    }
+  }
+
+  .cta-container {
+    grid-column: span 2;
+
+    button {
+      @include buttons.button(linear-gradient(90deg, #E88714 -56.14%, #F6A950 42.5%), transparent, colors.$white);
+      min-width: 130px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      cursor: pointer;
+    }
+  }
+}

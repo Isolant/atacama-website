@@ -234,6 +234,9 @@ footer .wrapper .social-networks-container ul li:first-child {
   margin-top: 6rem;
   width: 100%;
 }
+.hero .sand-illustration {
+  width: 100%;
+}
 
 .sand {
   background: linear-gradient(90deg, #EEC47C 0%, #F6D085 100%);
@@ -556,6 +559,70 @@ footer .wrapper .social-networks-container ul li:first-child {
 
 .last-timeline-item .wrapper {
   padding-bottom: 0;
+}
+
+.contact-form {
+  max-width: 820px;
+  margin: auto;
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+}
+.contact-form .input-container label {
+  display: block;
+  color: #353132;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+.contact-form .input-container label strong {
+  font-weight: 700;
+}
+.contact-form .input-container input, .contact-form .input-container select, .contact-form .input-container textarea {
+  background: #ffffff;
+  border: 1px solid #E1E1E1;
+  color: #353132;
+  font-size: 1rem;
+  border-radius: 6px;
+  padding: 1rem;
+  position: relative;
+  width: 100%;
+}
+.contact-form .input-container textarea {
+  resize: none;
+  height: 120px;
+}
+.contact-form .input-container.last {
+  grid-column: span 2;
+}
+.contact-form .cta-container {
+  grid-column: span 2;
+}
+.contact-form .cta-container button {
+  background: linear-gradient(90deg, #E88714 -56.14%, #F6A950 42.5%);
+  border: 1px solid transparent;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 1rem 1.5rem;
+  position: relative;
+  min-width: 130px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  cursor: pointer;
+}
+.contact-form .cta-container button svg {
+  margin-left: 1rem;
+  width: 19px;
+  position: absolute;
+  right: 1.5rem;
 }
 
 /*# sourceMappingURL=website.css.map */

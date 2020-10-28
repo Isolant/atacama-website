@@ -1,0 +1,12 @@
+@use '../config/sizes';
+
+@mixin input($background, $border, $font) {
+	background: $background;
+	border: 1px solid $border;
+	color: $font;
+	font-size: sizes.$xxs;
+	border-radius: 6px;
+	padding: sizes.$xxs;
+	position: relative;
+	width: 100%;
+}
