@@ -1,16 +1,198 @@
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isolant Aislantes - Atacama</title>
-    <!-- favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="theme-color" content="#ffffff">
-  </head>
-  <body style="display: flex; align-items: center; justify-content: center; height: 100vh;">
-    <img src="apple-touch-icon.png" alt="Isolant Aislantes" width="90" />
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Hormiga Plateada del Desierto - Atacama</title>
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+  <!-- styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.0/css/jsplumbtoolkit-defaults.min.css"
+    rel="stylesheet">
+  <link rel="stylesheet" href="dist/css/website.css" type="text/css">
+  <style>
+    .jtk-endpoint {
+      display: none;
+    }
+
+    .jtk-connector {
+      stroke-dasharray: 10, 10;
+      stroke-width: 2px;
+      stroke-opacity: .2;
+    }
+  </style>
+</head>
+
+<body id="top">
+  <!-- header -->
+  <header>
+    <div class="wrapper">
+      <div class="logo-container">
+        <a href="/">
+          <img src="assets/img/logo/atacama.svg" alt="Logo de Atacama" />
+        </a>
+      </div>
+      <div class="nav-container">
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html#top">Producto</a>
+            </li>
+            <li>
+              <a href="colocacion.html">Colocaci&oacute;n</a>
+            </li>
+            <li>
+              <a href="hormigaplateada.html" class="active">Hormiga Plateada</a>
+            </li>
+            <li>
+              <a href="index.html#company">¿Qui&eacute;nes somos?</a>
+            </li>
+            <li>
+              <a href="contacto.html">Contacto</a>
+            </li>
+            <li>
+              <a href="contacto.html" target="_blank" rel="noopener noreferrer" class="btn">Comprar</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- hero -->
+  <section class="hero">
+    <h1>
+      el secreto de la <strong>hormiga <br />plateada del desierto</strong>
+    </h1>
+    <p>
+      Mediod&iacute;a en el desierto. La arena del desierto puede alcanzar temperaturas de hasta 70 grados. A esa hora
+      solo hay
+      un
+      animal que se aventura a salir al sol. Se trata de una <strong>hormiga de aspecto met&aacute;lico.</strong>
+    </p>
+    <img src="assets/img/timeline/hormiga.png"
+      alt="Ilustración de una hormiga, donde se muestra un escudo que refleja la radiación solar"
+      srcset="assets/img/timeline/hormiga.png 1x, assets/img/timeline/hormiga@2x.png 2x" class="product-mockup" />
+  </section>
+  <!-- sand text -->
+  <section class="sand">
+    <div class="wrapper">
+      <ul class="timeline">
+        <li class="item">
+          <div class="circle" id="one">
+            <img src="assets/img/timeline/image-1.png" alt="Primer plano de una hormiga plateada del desierto"
+              srcset="assets/img/timeline/image-1.png 1x, assets/img/timeline/image-1@2x.png 2x">
+          </div>
+          <div class="text">
+            <h3>La clave est&aacute; en sus pelos</h3>
+            <p>
+              El pelo plateado de su armadura guarda el secreto para una nueva generaci&oacute;n de nanomateriales
+              capaces de resistir altas
+              temperaturas.
+            </p>
+          </div>
+        </li>
+        <li class="item">
+          <div class="circle" id="two">
+            <img src="assets/img/timeline/image-2.png" alt="Imagen de una hormiga cargando una hoja"
+              srcset="assets/img/timeline/image-2.png 1x, assets/img/timeline/image-2@2x.png 2x">
+          </div>
+          <div class="text">
+            <h3>El secreto mejor guardado</h3>
+            <p>
+              Las hormigas plateadas solo salen a buscar comida a mediod&iacute;a, cuando el calor es insoportable y
+              ning&uacute;n depredador puede
+              acecharlas.
+            </p>
+          </div>
+        </li>
+        <li class="item">
+          <div class="circle" id="three">
+            <img src="assets/img/timeline/image-3.png" alt="Panorama de un desierto con dunas de arena"
+              srcset="assets/img/timeline/image-3.png 1x, assets/img/timeline/image-3@2x.png 2x">
+          </div>
+          <div class="text">
+            <h3>La explicaci&oacute;n cient&iacute;fica</h3>
+            <p>
+              El h&aacute;bitat ya se conoce, pero nadie se hab&iacute;a detenido a tratar de averiguar desde el punto
+              de vista de la f&iacute;sica c&oacute;mo
+              logra exactamente este animalito resistir semejantes temperaturas.
+            </p>
+          </div>
+        </li>
+        <li class="item">
+          <div class="circle" id="four">
+            <img src="assets/img/timeline/image-4.png"
+              alt="Imagen microscópica de los pelos de la hormiga, mostrando una sección de corte triangular hueca"
+              srcset="assets/img/timeline/image-4.png 1x, assets/img/timeline/image-4@2x.png 2x">
+          </div>
+          <div class="text">
+            <h3>El "Traje de Astronauta"</h3>
+            <p>
+              La parte superior del cuerpo de estas hormigas est&aacute; recubierta de una densa capa de vello plateado.
+              El microscopio
+              electr&oacute;nico ha revelado que cada uno de estos pelos tiene una secci&oacute;n de corte triangular
+              hueca.
+            </p>
+          </div>
+        </li>
+        <li class="item">
+          <div class="circle" id="five">
+            <img src="assets/img/timeline/image-5.png" alt="Imagen microscópica de las nanoesferas del producto"
+              srcset="assets/img/timeline/image-5.png 1x, assets/img/timeline/image-5@2x.png 2x">
+          </div>
+          <div class="text">
+            <h3>Un horizonte de posibilidades</h3>
+            <p>
+              Esta estructura tiene una propiedad muy poco com&uacute;n en la naturaleza: refleja tanto la
+              radiaci&oacute;n electromagn&eacute;tica en el
+              rango visible para el ser humano, como una porci&oacute;n bastante amplia de radiaci&oacute;n infrarroja.
+            </p>
+          </div>
+        </li>
+        <li class="item" id="six">
+          <img src="assets/img/product/product-mockup.png"
+            alt="Montajes de un balde y una caja de producto Atacama, con el logo de reciclable"
+            srcset="assets/img/product/product-mockup.png 1x, assets/img/product/product-mockup@2x.png 2x"
+            class="product-mockup">
+        </li>
+      </ul>
+    </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.0/js/jsplumb.js"></script>
+  <script>
+    jsPlumb.ready(function () {
+      jsPlumb.connect({
+        source: "one",
+        target: "two",
+        anchors: ["Center", "Center"]
+      });
+      jsPlumb.connect({
+        source: "two",
+        target: "three",
+        anchors: ["Center", "Center"]
+      });
+      jsPlumb.connect({
+        source: "three",
+        target: "four",
+        anchors: ["Center", "Center"]
+      });
+      jsPlumb.connect({
+        source: "four",
+        target: "five",
+        anchors: ["Center", "Center"]
+      });
+      jsPlumb.connect({
+        source: "five",
+        target: "six",
+        anchors: ["Center", "Center"]
+      });
+    });
+  </script>
+</body>
+
 </html>

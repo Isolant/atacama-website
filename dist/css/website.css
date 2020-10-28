@@ -211,8 +211,23 @@ footer .wrapper .social-networks-container ul li:first-child {
   line-height: 1.6;
   text-transform: uppercase;
   max-width: 760px;
+  line-height: 1;
 }
 .hero h1 strong {
+  font-weight: 700;
+}
+.hero p {
+  max-width: 620px;
+  color: #353132;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0.6;
+  text-align: center;
+  margin: auto;
+  margin-top: 2rem;
+}
+.hero p strong {
   font-weight: 700;
 }
 .hero .product-mockup {
@@ -467,6 +482,55 @@ footer .wrapper .social-networks-container ul li:first-child {
 .company .sand-separator {
   width: 100%;
   margin-top: 4rem;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.timeline li {
+  display: flex;
+  align-items: center;
+  margin-top: 12rem;
+}
+.timeline li .circle {
+  margin-right: 3rem;
+  position: relative;
+  z-index: 1;
+}
+.timeline li .product-mockup {
+  position: relative;
+  z-index: 1;
+}
+.timeline li .text {
+  max-width: 360px;
+}
+.timeline li .text h3 {
+  color: #353132;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+.timeline li .text h3 strong {
+  font-weight: 700;
+}
+.timeline li .text p {
+  color: #353132;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0.6;
+}
+.timeline li .text p strong {
+  font-weight: 700;
+}
+.timeline li:nth-child(1), .timeline li:nth-child(5) {
+  margin-left: 12rem;
+}
+.timeline li:nth-child(2), .timeline li:nth-child(4) {
+  margin-right: 12rem;
 }
 
 /*# sourceMappingURL=website.css.map */

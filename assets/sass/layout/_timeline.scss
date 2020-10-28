@@ -1,0 +1,48 @@
+@use '../config/fonts';
+@use '../config/colors';
+@use '../config/sizes';
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  li {
+    display: flex;
+    align-items: center;
+    margin-top: sizes.$xxxl;
+
+    .circle {
+      margin-right: sizes.$m;
+      position: relative;
+      z-index: 1;
+    }
+
+    .product-mockup {
+      position: relative;
+      z-index: 1;
+    }
+
+    .text {
+      max-width: 360px;
+
+      h3 {
+        @include fonts.text(colors.$black, 600, 18px);
+        text-transform: uppercase;
+      }
+      
+      p {
+        @include fonts.text(colors.$black, 400, 18px);
+        opacity: 0.6;
+      }
+    }
+
+    &:nth-child(1), &:nth-child(5) {
+      margin-left: sizes.$xxxl;
+    }
+    
+    &:nth-child(2), &:nth-child(4) {
+      margin-right: sizes.$xxxl;
+    }
+  }
+}
