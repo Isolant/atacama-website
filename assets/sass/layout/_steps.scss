@@ -1,0 +1,78 @@
+@use '../config/fonts';
+@use '../config/colors';
+@use '../config/sizes';
+
+.steps {
+  padding-top: sizes.$xl;
+
+  .wrapper {
+    h3 {
+      @include fonts.text(colors.$black, 600, sizes.$xxs);
+      text-transform: uppercase;
+    }
+    
+    p {
+      @include fonts.text(colors.$black, 400, sizes.$xxs);
+      opacity: 0.6;
+    }
+    
+    .main-step {
+      background-color: colors.$white;
+      padding: sizes.$xxs;
+      border-radius: sizes.$xxs;
+      display: flex;
+      align-items: center;
+
+      .image-container {
+        margin: 0 sizes.$xxs;
+      }
+
+      .text-container {
+        text-align: left;
+
+        .information-box {
+          margin-top: sizes.$xxs;
+          background-color: #FFF0D2;
+          padding: sizes.$xxs;
+          border-radius: .5rem;
+
+          svg {
+            width: 18px;
+          }
+
+          p {
+            color: #96632F;
+            opacity: 1;
+            margin-top: sizes.$xxs;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .steps-list {
+      padding-top: sizes.$xxl;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: sizes.$l;
+
+      li {
+        img {
+          margin-bottom: sizes.$s;
+        }
+      }
+    }
+
+    .final-text {
+      padding-top: sizes.$xxl;
+      text-align: center;
+
+      .product-mockup {
+        position: absolute;
+        bottom: sizes.$s;
+        left: 50%;
+        margin-left: -200px;
+      }
+    }
+  }
+}

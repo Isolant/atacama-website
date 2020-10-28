@@ -1,0 +1,53 @@
+@use '../config/fonts';
+@use '../config/colors';
+@use '../config/sizes';
+
+.security {
+  .wrapper {
+    padding-top: sizes.$xxl;
+
+    h4 {
+      text-align: center;
+      @include fonts.text(colors.$black, 400, sizes.$s);
+      text-transform: uppercase;
+      max-width: 620px;
+      margin: auto;
+    }
+
+    .recommendations {
+      padding-top: sizes.$l;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: sizes.$s;
+
+      li {
+        display: flex;
+        margin-bottom: sizes.$xxs;
+
+        .icon {
+          background-color: colors.$white;
+          height: 52px;
+          border-radius: 52px;
+          width: 52px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: sizes.$xxs;
+
+          svg {
+            width: 24px;
+          }
+        }
+
+        .text {
+          flex: 1;
+
+          p {
+            @include fonts.text(colors.$black, 400, sizes.$xxs);
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+  }
+}
