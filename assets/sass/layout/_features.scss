@@ -12,6 +12,22 @@
     
     .text-container {
       padding-bottom: sizes.$xl;
+      text-align: center;
+
+      p {
+        @include fonts.text(colors.$white, 400, 18px);
+        text-align: center;
+        padding-top: sizes.$s;
+      }
+
+      a {
+        @include buttons.button(transparent, colors.$white, colors.$white);
+        display: inline-block;
+        border-radius: 0;
+        margin-top: sizes.$m;
+        min-width: 320px;
+        text-align: left;
+      }
 
       .feature-list {
         li {
@@ -34,23 +50,21 @@
 
           .text {
             flex: 1;
+            text-align: left;
+
+            p {
+              opacity: .6;
+              text-align: left;
+              padding-top: 0;
+            }
+
+            a {
+              margin-top: sizes.$xxs;
+            }
             
             h3 {
               @include fonts.text(colors.$white, 700, 18px);
               text-transform: uppercase;
-            }
-            
-            p {
-              @include fonts.text(colors.$white, 400, 18px);
-              opacity: .6;
-            }
-
-            a {
-              @include buttons.button(transparent, colors.$white, colors.$white);
-              display: inline-block;
-              border-radius: 0;
-              margin-top: sizes.$xxs;
-              min-width: 320px;
             }
           }
         }

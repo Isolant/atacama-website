@@ -288,6 +288,10 @@ footer .wrapper .social-networks-container ul li:first-child {
   background-image: url("../../assets/img/bg/sand.jpg"), linear-gradient(90.18deg, #EBA03F 0.08%, #ECA13F 37.26%, #DD9844 99.76%);
   background-size: 100%;
   background-repeat: no-repeat;
+  position: relative;
+}
+.sand-bg .mountains {
+  width: 100%;
 }
 
 .video .wrapper .text-container {
@@ -341,9 +345,6 @@ footer .wrapper .social-networks-container ul li:first-child {
 .video .wrapper .text-container .benefits li .text p strong {
   font-weight: 700;
 }
-.video .mountains {
-  width: 100%;
-}
 
 .features {
   background: linear-gradient(270deg, #CF4601 0%, #9F2601 72.5%, #992201 82.85%);
@@ -353,6 +354,40 @@ footer .wrapper .social-networks-container ul li:first-child {
 }
 .features .wrapper .text-container {
   padding-bottom: 6rem;
+  text-align: center;
+}
+.features .wrapper .text-container p {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+  padding-top: 2rem;
+}
+.features .wrapper .text-container p strong {
+  font-weight: 700;
+}
+.features .wrapper .text-container a {
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 1rem 1.5rem;
+  position: relative;
+  display: inline-block;
+  border-radius: 0;
+  margin-top: 3rem;
+  min-width: 320px;
+  text-align: left;
+}
+.features .wrapper .text-container a svg {
+  margin-left: 1rem;
+  width: 19px;
+  position: absolute;
+  right: 1.5rem;
 }
 .features .wrapper .text-container .feature-list li {
   display: flex;
@@ -373,6 +408,15 @@ footer .wrapper .social-networks-container ul li:first-child {
 }
 .features .wrapper .text-container .feature-list li .text {
   flex: 1;
+  text-align: left;
+}
+.features .wrapper .text-container .feature-list li .text p {
+  opacity: 0.6;
+  text-align: left;
+  padding-top: 0;
+}
+.features .wrapper .text-container .feature-list li .text a {
+  margin-top: 1rem;
 }
 .features .wrapper .text-container .feature-list li .text h3 {
   color: #ffffff;
@@ -383,37 +427,6 @@ footer .wrapper .social-networks-container ul li:first-child {
 }
 .features .wrapper .text-container .feature-list li .text h3 strong {
   font-weight: 700;
-}
-.features .wrapper .text-container .feature-list li .text p {
-  color: #ffffff;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.6;
-  opacity: 0.6;
-}
-.features .wrapper .text-container .feature-list li .text p strong {
-  font-weight: 700;
-}
-.features .wrapper .text-container .feature-list li .text a {
-  background: transparent;
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 14px;
-  border-radius: 6px;
-  padding: 1rem 1.5rem;
-  position: relative;
-  display: inline-block;
-  border-radius: 0;
-  margin-top: 1rem;
-  min-width: 320px;
-}
-.features .wrapper .text-container .feature-list li .text a svg {
-  margin-left: 1rem;
-  width: 19px;
-  position: absolute;
-  right: 1.5rem;
 }
 
 .company {
@@ -495,6 +508,9 @@ footer .wrapper .social-networks-container ul li:first-child {
   align-items: center;
   margin-top: 12rem;
 }
+.timeline li.first {
+  margin-top: 4rem;
+}
 .timeline li .circle {
   margin-right: 3rem;
   position: relative;
@@ -503,6 +519,10 @@ footer .wrapper .social-networks-container ul li:first-child {
 .timeline li .product-mockup {
   position: relative;
   z-index: 1;
+}
+.timeline li#six {
+  position: absolute;
+  bottom: 0;
 }
 .timeline li .text {
   max-width: 360px;
@@ -527,11 +547,15 @@ footer .wrapper .social-networks-container ul li:first-child {
 .timeline li .text p strong {
   font-weight: 700;
 }
-.timeline li:nth-child(1), .timeline li:nth-child(5) {
+.timeline li:nth-child(1) {
   margin-left: 12rem;
 }
-.timeline li:nth-child(2), .timeline li:nth-child(4) {
+.timeline li:nth-child(2) {
   margin-right: 12rem;
+}
+
+.last-timeline-item .wrapper {
+  padding-bottom: 0;
 }
 
 /*# sourceMappingURL=website.css.map */

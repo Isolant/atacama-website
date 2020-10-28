@@ -6,6 +6,11 @@
   background-image: url('../../assets/img/bg/sand.jpg'), linear-gradient(90.18deg, #EBA03F 0.08%, #ECA13F 37.26%, #DD9844 99.76%);;
   background-size: 100%;
   background-repeat: no-repeat;
+  position: relative;
+
+  .mountains {
+    width: 100%;
+  }
 }
 
 .video {
@@ -58,9 +63,5 @@
         }
       }
     }
-  }
-
-  .mountains {
-    width: 100%;
   }
 }
