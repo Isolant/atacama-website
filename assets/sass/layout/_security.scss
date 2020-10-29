@@ -50,4 +50,33 @@
       }
     }
   }
+
+  // iPad landscape
+  @media screen and (max-width: 1024px) {
+    .wrapper {
+      padding-top: sizes.$m;
+
+      .recommendations {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+
+  // Mobile landscape
+  @media screen and (max-width: 720px) {
+    .wrapper {
+      h4 {
+        font-size: sizes.$xs;
+      }
+
+      .recommendations {
+        grid-template-columns: 1fr;
+        padding-top: sizes.$s;
+
+        li {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
 }

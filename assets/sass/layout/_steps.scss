@@ -29,6 +29,11 @@
 
       .text-container {
         text-align: left;
+        padding-top: 0;
+
+        p {
+          margin-bottom: 0;
+        }
 
         .information-box {
           margin-top: sizes.$xxs;
@@ -72,6 +77,96 @@
         bottom: sizes.$s;
         left: 50%;
         margin-left: -200px;
+      }
+    }
+  }
+
+  // Small Desktop
+  @media screen and (max-width: 1200px) {
+    .wrapper {
+      .main-step {
+        .text-container {
+          h3, p {
+            font-size: sizes.$xxs;
+          }
+        }
+      }
+    }
+  }
+
+  // iPad landscape
+  @media screen and (max-width: 1024px) {
+    padding-top: sizes.$m;
+
+    .wrapper {
+      .main-step {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .image-container {
+          margin: 0;
+        }
+
+        .text-container {
+          margin-top: sizes.$xxs;
+          max-width: 100%;
+        }
+      }
+
+      .steps-list {
+        padding-top: sizes.$m;
+        grid-gap: sizes.$xs;
+      }
+
+      .final-text {
+        padding-top: sizes.$m;
+        padding-bottom: sizes.$m;
+      }
+    }
+  }
+
+  // iPad portrait
+  @media screen and (max-width: 940px) {
+    .wrapper {
+      .steps-list {
+        grid-template-columns: 1fr;
+
+        li {
+          img {
+            margin-bottom: sizes.$xxs;
+          }
+        }
+      }
+
+      .final-text {
+        padding-bottom: 0;
+
+        .product-mockup {
+          margin-left: -140px;
+          max-width: 280px;
+        }
+      }
+    }
+  }
+
+  // Mobile landscape
+  @media screen and (max-width: 720px) {
+    .wrapper {
+      .final-text {
+        padding-bottom: sizes.$m;
+
+        .product-mockup {
+          bottom: 0;
+        }
+      }
+    }
+  }
+
+  // Mobile portrait
+  @media screen and (max-width: 540px) {
+    .wrapper {
+      .final-text {
+        padding-bottom: sizes.$xxl;
       }
     }
   }

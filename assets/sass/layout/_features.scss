@@ -87,7 +87,7 @@
   }
 
   // Mobile portrait
-  @media screen and (max-width: 540px) {
+  @media screen and (max-width: 640px) {
     .wrapper {
       padding-bottom: sizes.$xxl;
 
@@ -122,6 +122,10 @@
           }
         }
       }
+    }
+
+    &.last-timeline-item {
+      padding-top: 0;
     }
   }
 }

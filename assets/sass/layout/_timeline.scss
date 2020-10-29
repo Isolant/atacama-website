@@ -125,5 +125,13 @@
   // Mobile portrait
   @media screen and (max-width: 640px) {
     padding-top: 6rem;
+
+    .wrapper {
+      .text-container {
+        .contact-btn {
+          min-width: auto;
+        }
+      }
+    }
   }
 }

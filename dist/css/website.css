@@ -405,12 +405,21 @@ footer .wrapper .social-networks-container ul li:first-child {
   left: 50%;
   margin-left: -42px;
 }
+@media screen and (max-width: 1024px) {
+  .hero.hero-colocacion .wrapper .hero-container {
+    grid-template-columns: 1fr;
+    padding-top: 6rem;
+  }
+  .hero.hero-colocacion .wrapper .hero-container .text h1 {
+    max-width: 100%;
+  }
+}
 @media screen and (max-width: 768px) {
   .hero h1, .hero p {
     max-width: 90%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 720px) {
   .hero h1 {
     font-size: 1.5rem;
   }
@@ -420,6 +429,14 @@ footer .wrapper .social-networks-container ul li:first-child {
   }
   .hero .product-mockup {
     margin-top: 3rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  .hero.hero-colocacion .wrapper .hero-container .text .installation-container img {
+    margin-right: 0;
+  }
+  .hero.hero-colocacion .wrapper .hero-container .text .installation-container p {
+    display: none;
   }
 }
 
@@ -654,7 +671,7 @@ footer .wrapper .social-networks-container ul li:first-child {
     padding-top: 1rem;
   }
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 640px) {
   .features .wrapper {
     padding-bottom: 8rem;
   }
@@ -679,6 +696,9 @@ footer .wrapper .social-networks-container ul li:first-child {
   }
   .features .wrapper .text-container a svg {
     display: none;
+  }
+  .features.last-timeline-item {
+    padding-top: 0;
   }
 }
 
@@ -872,6 +892,9 @@ footer .wrapper .social-networks-container ul li:first-child {
   .last-timeline-item {
     padding-top: 6rem;
   }
+  .last-timeline-item .wrapper .text-container .contact-btn {
+    min-width: auto;
+  }
 }
 
 .contact-form {
@@ -973,6 +996,10 @@ footer .wrapper .social-networks-container ul li:first-child {
 }
 .steps .wrapper .main-step .text-container {
   text-align: left;
+  padding-top: 0;
+}
+.steps .wrapper .main-step .text-container p {
+  margin-bottom: 0;
 }
 .steps .wrapper .main-step .text-container .information-box {
   margin-top: 1rem;
@@ -1007,6 +1034,63 @@ footer .wrapper .social-networks-container ul li:first-child {
   bottom: 2rem;
   left: 50%;
   margin-left: -200px;
+}
+@media screen and (max-width: 1200px) {
+  .steps .wrapper .main-step .text-container h3, .steps .wrapper .main-step .text-container p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .steps {
+    padding-top: 3rem;
+  }
+  .steps .wrapper .main-step {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .steps .wrapper .main-step .image-container {
+    margin: 0;
+  }
+  .steps .wrapper .main-step .text-container {
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+  .steps .wrapper .steps-list {
+    padding-top: 3rem;
+    grid-gap: 1.5rem;
+  }
+  .steps .wrapper .final-text {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+@media screen and (max-width: 940px) {
+  .steps .wrapper .steps-list {
+    grid-template-columns: 1fr;
+  }
+  .steps .wrapper .steps-list li img {
+    margin-bottom: 1rem;
+  }
+  .steps .wrapper .final-text {
+    padding-bottom: 0;
+  }
+  .steps .wrapper .final-text .product-mockup {
+    margin-left: -140px;
+    max-width: 280px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .steps .wrapper .final-text {
+    padding-bottom: 3rem;
+  }
+  .steps .wrapper .final-text .product-mockup {
+    bottom: 0;
+  }
+}
+@media screen and (max-width: 540px) {
+  .steps .wrapper .final-text {
+    padding-bottom: 8rem;
+  }
 }
 
 .security .wrapper {
@@ -1060,6 +1144,26 @@ footer .wrapper .social-networks-container ul li:first-child {
 }
 .security .wrapper .recommendations li .text p strong {
   font-weight: 700;
+}
+@media screen and (max-width: 1024px) {
+  .security .wrapper {
+    padding-top: 3rem;
+  }
+  .security .wrapper .recommendations {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 720px) {
+  .security .wrapper h4 {
+    font-size: 1.5rem;
+  }
+  .security .wrapper .recommendations {
+    grid-template-columns: 1fr;
+    padding-top: 2rem;
+  }
+  .security .wrapper .recommendations li {
+    margin-bottom: 0;
+  }
 }
 
 /*# sourceMappingURL=website.css.map */

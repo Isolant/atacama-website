@@ -88,6 +88,24 @@
   }
 
   // iPad portrait
+  @media screen and (max-width: 1024px) {
+    &.hero-colocacion {
+      .wrapper {
+        .hero-container {
+          grid-template-columns: 1fr;
+          padding-top: sizes.$xl;
+
+          .text {
+            h1 {
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // iPad portrait
   @media screen and (max-width: 768px) {
     h1, p {
       max-width: 90%;
@@ -95,7 +113,7 @@
   }
   
   // Mobile landscape
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 720px) {
     h1 {
       font-size: sizes.$xs;
     }
@@ -107,6 +125,27 @@
     
     .product-mockup {
       margin-top: sizes.$m;
+    }
+  }
+
+  // Mobile portrait
+  @media screen and (max-width: 540px) {
+    &.hero-colocacion {
+      .wrapper {
+        .hero-container {
+          .text {
+            .installation-container {
+              img {
+                margin-right: 0;
+              }
+
+              p {
+                display: none;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
