@@ -112,11 +112,14 @@ header .wrapper .logo-container {
 header .wrapper .nav-container {
   flex: 1;
 }
-header .wrapper .nav-container nav ul {
+header .wrapper .nav-container nav {
   display: flex;
   justify-content: flex-end;
+}
+header .wrapper .nav-container nav ul {
+  display: flex;
   position: relative;
-  top: -2px;
+  top: -3px;
 }
 header .wrapper .nav-container nav ul li {
   margin-left: 2rem;
@@ -134,7 +137,22 @@ header .wrapper .nav-container nav ul li a.active {
   color: #F6A950;
   font-weight: 600;
 }
-header .wrapper .nav-container nav ul li a.btn {
+header .wrapper .nav-container nav ul li.close {
+  display: none;
+}
+header .wrapper .nav-container nav ul li.close button {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+header .wrapper .nav-container nav ul li.close button svg {
+  fill: #ffffff;
+}
+header .wrapper .nav-container nav ol li {
+  margin-left: 2rem;
+}
+header .wrapper .nav-container nav ol li.btn a {
   background: linear-gradient(90deg, #E88714 -56.14%, #F6A950 42.5%);
   border: 1px solid transparent;
   color: #ffffff;
@@ -145,11 +163,116 @@ header .wrapper .nav-container nav ul li a.btn {
   padding: 1rem 1.5rem;
   position: relative;
 }
-header .wrapper .nav-container nav ul li a.btn svg {
+header .wrapper .nav-container nav ol li.btn a svg {
   margin-left: 1rem;
   width: 19px;
   position: absolute;
   right: 1.5rem;
+}
+header .wrapper .nav-container nav ol li.hamburger {
+  display: none;
+}
+header .wrapper .nav-container nav ol li.hamburger button {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+}
+header .wrapper .nav-container nav ol li.hamburger button svg {
+  fill: #4a4a4a;
+  height: 32px;
+}
+@media screen and (max-width: 1200px) {
+  header {
+    background-position: center;
+  }
+  header .wrapper .nav-container nav ul li, header .wrapper .nav-container nav ol li {
+    margin-left: 1rem;
+  }
+  header .wrapper .nav-container nav ul li a, header .wrapper .nav-container nav ol li a {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  header {
+    background: linear-gradient(180deg, #FFFFFF -1.01%, #D1D3D4 98.99%);
+    border-bottom: 0.5rem solid #5A5758;
+  }
+  header .wrapper {
+    min-height: 120px;
+  }
+  header .wrapper .nav-container nav {
+    flex-wrap: wrap;
+  }
+  header .wrapper .nav-container nav ul {
+    display: none;
+  }
+  header .wrapper .nav-container nav ul.active {
+    order: 1;
+    display: block;
+    flex: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+  }
+  header .wrapper .nav-container nav ul.active li a {
+    color: #353132;
+  }
+  header .wrapper .nav-container nav ol {
+    display: flex;
+    align-items: center;
+  }
+  header .wrapper .nav-container nav ol li.btn, header .wrapper .nav-container nav ol li.hamburger {
+    display: block;
+  }
+  header .wrapper .nav-container nav ol li.btn a, header .wrapper .nav-container nav ol li.hamburger a {
+    display: block;
+  }
+}
+@media screen and (max-width: 720px) {
+  header .wrapper .nav-container nav ul.active {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 12px;
+    background: #353132;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 0;
+    z-index: 1;
+    justify-content: center;
+  }
+  header .wrapper .nav-container nav ul.active li {
+    margin-left: 0;
+    margin: 0.75rem 0;
+  }
+  header .wrapper .nav-container nav ul.active li a {
+    color: #ffffff;
+    font-size: 1rem;
+  }
+  header .wrapper .nav-container nav ul.active li.close {
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  header .wrapper .nav-container nav ul.active li.close button svg {
+    width: 32px;
+  }
+}
+@media screen and (max-width: 540px) {
+  header .wrapper {
+    min-height: 90px;
+  }
+  header .wrapper .logo-container {
+    max-width: 120px;
+  }
+  header .wrapper .nav-container nav ol li.btn a {
+    padding: 1rem;
+  }
 }
 
 footer .separator {
