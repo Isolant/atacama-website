@@ -54,6 +54,61 @@
       margin-right: sizes.$xxxl;
     }
   }
+
+  // iPad portrait
+  @media screen and (max-width: 940px) {
+    li {
+      &:nth-child(1) {
+        margin-left: 0;
+      }
+      
+      &:nth-child(2) {
+        margin-right: 0;
+      }
+
+      .product-mockup {
+        max-width: 280px;
+      }
+    }
+  }
+
+  // Mobile landscape
+  @media screen and (max-width: 720px) {
+    li {
+      margin-top: sizes.$l;
+
+      .circle {
+        margin-right: sizes.$xxs;
+      }
+
+      .text {
+        h3, p {
+          font-size: sizes.$xxs;
+        }
+      }
+    }
+  }
+
+  // Mobile portrait
+  @media screen and (max-width: 640px) {
+    li {
+      flex-direction: column;
+      margin-top: sizes.$s;
+
+      .circle {
+        margin-right: 0;
+      }
+
+      .text {
+        margin-top: sizes.$xxs;
+        text-align: center;
+      }
+
+      &#six {
+        bottom: -6rem;
+      }
+    }
+  }
 }
 
 .last-timeline-item {
@@ -65,5 +120,10 @@
         min-width: 200px;
       }
     }
+  }
+
+  // Mobile portrait
+  @media screen and (max-width: 640px) {
+    padding-top: 6rem;
   }
 }

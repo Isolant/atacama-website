@@ -406,13 +406,17 @@ footer .wrapper .social-networks-container ul li:first-child {
   margin-left: -42px;
 }
 @media screen and (max-width: 768px) {
-  .hero h1 {
+  .hero h1, .hero p {
     max-width: 90%;
   }
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 768px) {
   .hero h1 {
     font-size: 1.5rem;
+  }
+  .hero p {
+    font-size: 1rem;
+    margin-top: 1rem;
   }
   .hero .product-mockup {
     margin-top: 3rem;
@@ -483,6 +487,11 @@ footer .wrapper .social-networks-container ul li:first-child {
 }
 .sand-bg .mountains {
   width: 100%;
+}
+@media screen and (max-width: 640px) {
+  .sand-bg .mountains {
+    margin-top: 1.5rem;
+  }
 }
 
 .video .wrapper .text-container {
@@ -635,6 +644,15 @@ footer .wrapper .social-networks-container ul li:first-child {
 }
 .features .wrapper .text-container .feature-list li .text h3 strong {
   font-weight: 700;
+}
+@media screen and (max-width: 720px) {
+  .features .wrapper .text-container {
+    padding-bottom: 3rem;
+  }
+  .features .wrapper .text-container p {
+    font-size: 1rem;
+    padding-top: 1rem;
+  }
 }
 @media screen and (max-width: 540px) {
   .features .wrapper {
@@ -805,12 +823,55 @@ footer .wrapper .social-networks-container ul li:first-child {
 .timeline li:nth-child(2) {
   margin-right: 12rem;
 }
+@media screen and (max-width: 940px) {
+  .timeline li:nth-child(1) {
+    margin-left: 0;
+  }
+  .timeline li:nth-child(2) {
+    margin-right: 0;
+  }
+  .timeline li .product-mockup {
+    max-width: 280px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .timeline li {
+    margin-top: 4rem;
+  }
+  .timeline li .circle {
+    margin-right: 1rem;
+  }
+  .timeline li .text h3, .timeline li .text p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .timeline li {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  .timeline li .circle {
+    margin-right: 0;
+  }
+  .timeline li .text {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .timeline li#six {
+    bottom: -6rem;
+  }
+}
 
 .last-timeline-item .wrapper {
   padding-bottom: 0;
 }
 .last-timeline-item .wrapper .text-container .contact-btn {
   min-width: 200px;
+}
+@media screen and (max-width: 640px) {
+  .last-timeline-item {
+    padding-top: 6rem;
+  }
 }
 
 .contact-form {

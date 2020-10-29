@@ -72,6 +72,20 @@
     }
   }
 
+  // Mobile landscape
+  @media screen and (max-width: 720px) {
+    .wrapper {
+      .text-container {
+        padding-bottom: sizes.$m;
+
+        p {
+          font-size: sizes.$xxs;
+          padding-top: sizes.$xxs;
+        }
+      }
+    }
+  }
+
   // Mobile portrait
   @media screen and (max-width: 540px) {
     .wrapper {

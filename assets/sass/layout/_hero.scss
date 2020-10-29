@@ -89,17 +89,22 @@
 
   // iPad portrait
   @media screen and (max-width: 768px) {
-    h1 {
+    h1, p {
       max-width: 90%;
     }
   }
-
-  // Mobile portrait
-  @media screen and (max-width: 540px) {
+  
+  // Mobile landscape
+  @media screen and (max-width: 768px) {
     h1 {
       font-size: sizes.$xs;
     }
 
+    p {
+      font-size: sizes.$xxs;
+      margin-top: sizes.$xxs;
+    }
+    
     .product-mockup {
       margin-top: sizes.$m;
     }

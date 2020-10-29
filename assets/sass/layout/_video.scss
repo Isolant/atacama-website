@@ -11,6 +11,13 @@
   .mountains {
     width: 100%;
   }
+
+  // Mobile landscape
+  @media screen and (max-width: 640px) {
+    .mountains {
+      margin-top: sizes.$xs;
+    }
+  }
 }
 
 .video {
