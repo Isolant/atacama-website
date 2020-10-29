@@ -64,4 +64,37 @@
       }
     }
   }
+
+  // iPad portrait
+  @media screen and (max-width: 768px) {
+    .wrapper {
+      .text-container {
+        .benefits {
+          padding-top: sizes.$l;
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+  }
+
+  // Mobile portrait
+  @media screen and (max-width: 540px) {
+    .wrapper {
+      .text-container {
+        .benefits {
+          padding-top: sizes.$s;
+
+          li {
+            margin-bottom: sizes.$xs;
+
+            .text {
+              h3, p {
+                font-size: sizes.$xxs;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

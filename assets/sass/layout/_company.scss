@@ -61,4 +61,28 @@
     width: 100%;
     margin-top: sizes.$l;
   }
+
+  // Mobile portrait
+  @media screen and (max-width: 540px) {
+    .wrapper {
+      .logo-atacama {
+        width: 280px;
+        margin-left: -140px;
+        top: -140px;
+      }
+
+      .text-container {
+        margin-top: 220px;
+
+        .logos {
+          flex-direction: column;
+          margin-bottom: 0;
+
+          img {
+            margin-bottom: sizes.$s;
+          }
+        }
+      }
+    }
+  }
 }

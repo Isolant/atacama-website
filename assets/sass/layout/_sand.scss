@@ -17,6 +17,18 @@
       }
     }
   }
+
+  // Mobile portrait
+  @media screen and (max-width: 540px) {
+    .wrapper {
+      .text-container {
+        p {
+          font-size: sizes.$xxs;
+          margin-bottom: sizes.$xxs;
+        }
+      }
+    }
+  }
 }
 
 .know-more {

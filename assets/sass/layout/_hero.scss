@@ -86,4 +86,22 @@
       margin-left: -42px;
     }
   }
+
+  // iPad portrait
+  @media screen and (max-width: 768px) {
+    h1 {
+      max-width: 90%;
+    }
+  }
+
+  // Mobile portrait
+  @media screen and (max-width: 540px) {
+    h1 {
+      font-size: sizes.$xs;
+    }
+
+    .product-mockup {
+      margin-top: sizes.$m;
+    }
+  }
 }

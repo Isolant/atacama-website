@@ -71,4 +71,43 @@
       }
     }
   }
+
+  // Mobile portrait
+  @media screen and (max-width: 540px) {
+    .wrapper {
+      padding-bottom: sizes.$xxl;
+
+      .text-container {
+        padding-bottom: sizes.$m;
+
+        .feature-list {
+          li {
+            padding-bottom: sizes.$s;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .icon {
+              margin-right: 0;
+              max-width: 152px;
+              margin-bottom: sizes.$xs;
+            }
+
+            .text {
+              h3, p {
+                font-size: sizes.$xxs;
+              }
+            }
+          }
+        }
+
+        a {
+          min-width: auto;
+
+          svg {
+            display: none;
+          }
+        }
+      }
+    }
+  }
 }

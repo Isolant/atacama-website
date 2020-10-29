@@ -316,6 +316,15 @@ footer .wrapper .social-networks-container ul li {
 footer .wrapper .social-networks-container ul li:first-child {
   margin-left: 0;
 }
+@media screen and (max-width: 720px) {
+  footer .wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .wrapper .legal-text-container {
+    margin-bottom: 1.5rem;
+  }
+}
 
 .hero {
   background: linear-gradient(180deg, #8FD1F5 0%, #FFFFFF 100%), #C4C4C4;
@@ -396,6 +405,19 @@ footer .wrapper .social-networks-container ul li:first-child {
   left: 50%;
   margin-left: -42px;
 }
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    max-width: 90%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  .hero .product-mockup {
+    margin-top: 3rem;
+  }
+}
 
 .sand {
   background: linear-gradient(90deg, #EEC47C 0%, #F6D085 100%);
@@ -414,6 +436,12 @@ footer .wrapper .social-networks-container ul li:first-child {
 }
 .sand .wrapper .text-container p strong {
   font-weight: 700;
+}
+@media screen and (max-width: 540px) {
+  .sand .wrapper .text-container p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .know-more {
@@ -508,6 +536,23 @@ footer .wrapper .social-networks-container ul li:first-child {
 .video .wrapper .text-container .benefits li .text p strong {
   font-weight: 700;
 }
+@media screen and (max-width: 768px) {
+  .video .wrapper .text-container .benefits {
+    padding-top: 4rem;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 540px) {
+  .video .wrapper .text-container .benefits {
+    padding-top: 2rem;
+  }
+  .video .wrapper .text-container .benefits li {
+    margin-bottom: 1.5rem;
+  }
+  .video .wrapper .text-container .benefits li .text h3, .video .wrapper .text-container .benefits li .text p {
+    font-size: 1rem;
+  }
+}
 
 .features {
   background: linear-gradient(270deg, #CF4601 0%, #9F2601 72.5%, #992201 82.85%);
@@ -591,6 +636,33 @@ footer .wrapper .social-networks-container ul li:first-child {
 .features .wrapper .text-container .feature-list li .text h3 strong {
   font-weight: 700;
 }
+@media screen and (max-width: 540px) {
+  .features .wrapper {
+    padding-bottom: 8rem;
+  }
+  .features .wrapper .text-container {
+    padding-bottom: 3rem;
+  }
+  .features .wrapper .text-container .feature-list li {
+    padding-bottom: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .features .wrapper .text-container .feature-list li .icon {
+    margin-right: 0;
+    max-width: 152px;
+    margin-bottom: 1.5rem;
+  }
+  .features .wrapper .text-container .feature-list li .text h3, .features .wrapper .text-container .feature-list li .text p {
+    font-size: 1rem;
+  }
+  .features .wrapper .text-container a {
+    min-width: auto;
+  }
+  .features .wrapper .text-container a svg {
+    display: none;
+  }
+}
 
 .company {
   position: relative;
@@ -659,6 +731,23 @@ footer .wrapper .social-networks-container ul li:first-child {
 .company .sand-separator {
   width: 100%;
   margin-top: 4rem;
+}
+@media screen and (max-width: 540px) {
+  .company .wrapper .logo-atacama {
+    width: 280px;
+    margin-left: -140px;
+    top: -140px;
+  }
+  .company .wrapper .text-container {
+    margin-top: 220px;
+  }
+  .company .wrapper .text-container .logos {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .company .wrapper .text-container .logos img {
+    margin-bottom: 2rem;
+  }
 }
 
 .timeline {
