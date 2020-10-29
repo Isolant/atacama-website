@@ -960,6 +960,16 @@ footer .wrapper .social-networks-container ul li:first-child {
   position: absolute;
   right: 1.5rem;
 }
+@media screen and (max-width: 720px) {
+  .contact-form {
+    margin-top: 2rem;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+  .contact-form .input-container {
+    grid-column: span 2;
+  }
+}
 
 .steps {
   padding-top: 6rem;

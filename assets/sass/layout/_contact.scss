@@ -48,4 +48,15 @@
       cursor: pointer;
     }
   }
+
+  // Mobile landscape
+  @media screen and (max-width: 720px) {
+    margin-top: sizes.$s;
+    grid-gap: sizes.$xxs;
+    grid-template-columns: 1fr;
+
+    .input-container {
+      grid-column: span 2;
+    }
+  }
 }
