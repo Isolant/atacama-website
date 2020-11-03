@@ -9,7 +9,7 @@ const adjustUI = (data) => {
   if(result !== undefined) {
     return;
   } else {
-    buyButton.href = 'contacto.html';
+    buyButton.classList.add('hidden');
   }
 }
 

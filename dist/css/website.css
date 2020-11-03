@@ -169,6 +169,9 @@ header .wrapper .nav-container nav ol li.btn a svg {
   position: absolute;
   right: 1.5rem;
 }
+header .wrapper .nav-container nav ol li.btn a.hidden {
+  display: none;
+}
 header .wrapper .nav-container nav ol li.hamburger {
   display: none;
 }
