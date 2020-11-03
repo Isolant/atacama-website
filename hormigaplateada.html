@@ -26,6 +26,31 @@
       stroke-opacity: .2;
     }
 
+    .visible,
+    .invisible {
+      opacity: 0.0;
+      transition: opacity 0.5s ease;
+    }
+
+    .visible {
+      opacity: 1.0;
+    }
+
+    .jtk-connector>path {
+      stroke-dashoffset: 0px;
+    }
+
+    @keyframes antPath {
+      to {
+        stroke-dashoffset: -40px;
+      }
+    }
+
+    .jtk-connector>path {
+      animation: antPath .9s linear;
+      animation-iteration-count: infinite;
+    }
+
     /* Mobile portrait */
     @media screen and (max-width: 640px) {
 
@@ -116,11 +141,11 @@
     <div class="wrapper">
       <ul class="timeline">
         <li class="item first">
-          <div class="circle" id="one">
+          <div class="circle slide-in" id="one">
             <img src="assets/img/timeline/image-1.png" alt="Primer plano de una hormiga plateada del desierto"
               srcset="assets/img/timeline/image-1.png 1x, assets/img/timeline/image-1@2x.png 2x">
           </div>
-          <div class="text">
+          <div class="text slide-in">
             <h3>La clave est&aacute; en sus pelos</h3>
             <p>
               El pelo plateado de su armadura guarda el secreto para una nueva generaci&oacute;n de nanomateriales
@@ -130,11 +155,11 @@
           </div>
         </li>
         <li class="item">
-          <div class="circle" id="two">
+          <div class="circle slide-in" id="two">
             <img src="assets/img/timeline/image-2.png" alt="Imagen de una hormiga cargando una hoja"
               srcset="assets/img/timeline/image-2.png 1x, assets/img/timeline/image-2@2x.png 2x">
           </div>
-          <div class="text">
+          <div class="text slide-in">
             <h3>El secreto mejor guardado</h3>
             <p>
               Las hormigas plateadas solo salen a buscar comida a mediod&iacute;a, cuando el calor es insoportable y
@@ -151,11 +176,11 @@
     <div class="wrapper">
       <ul class="timeline">
         <li class="item">
-          <div class="circle" id="three">
+          <div class="circle slide-in" id="three">
             <img src="assets/img/timeline/image-3.png" alt="Panorama de un desierto con dunas de arena"
               srcset="assets/img/timeline/image-3.png 1x, assets/img/timeline/image-3@2x.png 2x">
           </div>
-          <div class="text">
+          <div class="text slide-in">
             <h3>La explicaci&oacute;n cient&iacute;fica</h3>
             <p>
               El h&aacute;bitat ya se conoce, pero nadie se hab&iacute;a detenido a tratar de averiguar desde el punto
@@ -165,12 +190,12 @@
           </div>
         </li>
         <li class="item">
-          <div class="circle" id="four">
+          <div class="circle slide-in" id="four">
             <img src="assets/img/timeline/image-4.png"
               alt="Imagen microscópica de los pelos de la hormiga, mostrando una sección de corte triangular hueca"
               srcset="assets/img/timeline/image-4.png 1x, assets/img/timeline/image-4@2x.png 2x">
           </div>
-          <div class="text">
+          <div class="text slide-in">
             <h3>El "Traje de Astronauta"</h3>
             <p>
               La parte superior del cuerpo de estas hormigas est&aacute; recubierta de una densa capa de vello plateado.
@@ -181,11 +206,11 @@
           </div>
         </li>
         <li class="item">
-          <div class="circle" id="five">
+          <div class="circle slide-in" id="five">
             <img src="assets/img/timeline/image-5.png" alt="Imagen microscópica de las nanoesferas del producto"
               srcset="assets/img/timeline/image-5.png 1x, assets/img/timeline/image-5@2x.png 2x">
           </div>
-          <div class="text">
+          <div class="text slide-in">
             <h3>Un horizonte de posibilidades</h3>
             <p>
               Esta estructura tiene una propiedad muy poco com&uacute;n en la naturaleza: refleja tanto la
@@ -194,7 +219,7 @@
             </p>
           </div>
         </li>
-        <li class="item" id="six">
+        <li class="item slide-in" id="six">
           <img src="assets/img/product/product-mockup.png"
             alt="Montajes de un balde y una caja de producto Atacama, con el logo de reciclable"
             srcset="assets/img/product/product-mockup.png 1x, assets/img/product/product-mockup@2x.png 2x"
@@ -208,7 +233,7 @@
   <!-- features -->
   <section class="features last-timeline-item">
     <div class="wrapper">
-      <div class="text-container">
+      <div class="text-container slide-in">
         <p>
           <strong>Atacama Escudo Solar</strong> surge de la observaci&oacute;n de las caracter&iacute;sticas de la
           hormiga plateada del
@@ -311,6 +336,8 @@
     });
   </script>
   <script src="assets/js/getYear.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js"></script>
+  <script src="assets/js/timelineAnimations.js"></script>
 </body>
 
 </html>
