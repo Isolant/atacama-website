@@ -1,7 +1,7 @@
 <?php
   require '../../vendor/autoload.php';
   use Mailgun\Mailgun;
-  $mailgun = Mailgun::create('pubkey-f9b47f60b5e823fe809bc0df1d64e505');
+  $mailgun = Mailgun::create('c75442aa270507406a690e15dddf33fa-0e6e8cad-8c68a9f4');
 
   $mailgun->messages()->send('mg.isolant.com.ar', [
     'from'    => 'isolant@isolant.com.ar',
