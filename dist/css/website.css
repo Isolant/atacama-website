@@ -961,8 +961,9 @@ footer .wrapper .social-networks-container ul li:first-child {
 }
 .contact-form .cta-container {
   grid-column: span 2;
+  text-align: right;
 }
-.contact-form .cta-container button {
+.contact-form .cta-container input {
   background: linear-gradient(90deg, #E88714 -56.14%, #F6A950 42.5%);
   border: 1px solid transparent;
   color: #ffffff;
@@ -973,13 +974,9 @@ footer .wrapper .social-networks-container ul li:first-child {
   padding: 1rem 1.5rem;
   position: relative;
   min-width: 130px;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  margin-left: auto;
   cursor: pointer;
 }
-.contact-form .cta-container button svg {
+.contact-form .cta-container input svg {
   margin-left: 1rem;
   width: 19px;
   position: absolute;

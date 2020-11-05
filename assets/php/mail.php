@@ -6,9 +6,9 @@
   // Get the data from the form
   $name = $_POST['name'];
   $email = $_POST['email'];
-  $phone = $_POST['phone'];
+  $phone = $_POST['tel'];
   $location = $_POST['location'];
-  $message = $_POST['message'];
+  $message = $_POST['comments'];
   
   // Create the html structure
   $htmlContent = "
