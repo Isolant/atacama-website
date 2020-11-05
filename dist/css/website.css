@@ -365,6 +365,27 @@ footer .wrapper .social-networks-container ul li:first-child {
 .hero p strong {
   font-weight: 700;
 }
+.hero .btn {
+  background: linear-gradient(90deg, #E88714 -56.14%, #F6A950 42.5%);
+  border: 1px solid trasparent;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 1rem 1.5rem;
+  position: relative;
+  display: block;
+  max-width: 200px;
+  margin: auto;
+  margin-top: 2rem;
+}
+.hero .btn svg {
+  margin-left: 1rem;
+  width: 19px;
+  position: absolute;
+  right: 1.5rem;
+}
 .hero .product-mockup {
   margin-top: 6rem;
   width: 100%;
