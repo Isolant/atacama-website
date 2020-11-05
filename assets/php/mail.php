@@ -3,12 +3,15 @@
   use Mailgun\Mailgun;
   $mg = Mailgun::create('pubkey-f9b47f60b5e823fe809bc0df1d64e505');
 
-  $mg->messages()->send('mg.isolant.com.ar', [
-    'from'    => 'isolant@isolant.com.ar',
+  $domain = 'mg.isolant.com.ar';
+  $params = array(
+    'from'    => 'Isolant Aislantes <isolant@isolant.com.ar>',
     'to'      => 'hello@juangarcia.com.ar',
-    'subject' => 'Test',
-    'text'    => 'Test body'
-  ]);
+    'subject' => 'Hello',
+    'text'    => 'Testing some Mailgun awesomness!'
+  );
+
+  $mg->messages()->send($domain, $params);
 
   echo 'sent';
 ?>
