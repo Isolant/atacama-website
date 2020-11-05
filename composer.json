@@ -1,7 +1,5 @@
 {
     "require": {
-        "mailgun/mailgun-php": "^3.1",
-        "php-http/guzzle6-adapter": "^2.0",
-        "php-http/message": "^1.9"
+        "phpmailer/phpmailer": "^6.1"
     }
 }
