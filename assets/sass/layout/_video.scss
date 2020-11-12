@@ -25,8 +25,9 @@
     .text-container {
       padding-top: sizes.$l;
 
-      video {
+      iframe {
         width: 100%;
+        height: 420px;
         border-radius: sizes.$xxs;
       }
 
@@ -83,11 +84,31 @@
       }
     }
   }
+  
+  // Mobile landscap
+  @media screen and (max-width: 720px) {
+    .wrapper {
+      .text-container {
+        iframe {
+          height: 360px;
+        }
+
+        .benefits {
+          padding-top: sizes.$l;
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+  }
 
   // Mobile portrait
   @media screen and (max-width: 540px) {
     .wrapper {
       .text-container {
+        iframe {
+          height: 260px;
+        }
+
         .benefits {
           padding-top: sizes.$s;
 
