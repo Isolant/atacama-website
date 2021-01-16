@@ -70,9 +70,10 @@ header {
             &.btn {
               a {
                 @include buttons.button(linear-gradient(90deg, #E88714 -56.14%, #F6A950 42.5%), transparent, colors.$white);
+                display: none;
 
-                &.hidden {
-                  display: none;
+                &.visible {
+                  display: inline;
                 }
               }
             }

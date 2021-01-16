@@ -162,6 +162,7 @@ header .wrapper .nav-container nav ol li.btn a {
   border-radius: 6px;
   padding: 1rem 1.5rem;
   position: relative;
+  display: none;
 }
 header .wrapper .nav-container nav ol li.btn a svg {
   margin-left: 1rem;
@@ -169,8 +170,8 @@ header .wrapper .nav-container nav ol li.btn a svg {
   position: absolute;
   right: 1.5rem;
 }
-header .wrapper .nav-container nav ol li.btn a.hidden {
-  display: none;
+header .wrapper .nav-container nav ol li.btn a.visible {
+  display: inline;
 }
 header .wrapper .nav-container nav ol li.hamburger {
   display: none;
