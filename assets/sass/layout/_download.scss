@@ -1,0 +1,63 @@
+@use '../config/fonts';
+@use '../config/colors';
+@use '../config/sizes';
+
+.download-list {
+  margin-top: sizes.$l;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: sizes.$xxs;
+
+  li {
+    background-color: colors.$white;
+    border-radius: 40px;
+    padding: sizes.$xxs;
+    display: grid;
+    grid-template-columns: 42px 1fr;
+    grid-gap: sizes.$xxs;
+    align-items: center;
+
+    .text {
+      h3 {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.6;
+        text-transform: uppercase;
+        color: colors.$grey;
+      }
+      
+      a {
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.6;
+        text-transform: uppercase;
+        color: colors.$orange;
+        margin-top: sizes.$xxxs;
+
+        svg {
+          margin-right: sizes.$xxxs;
+        }
+      }
+    }
+  }
+
+  // Small desktop
+  @media screen and (max-width: 1200px) {
+    li {
+      grid-template-columns: 32px 1fr;
+    }
+  }
+
+  // iPad landscape
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  // Mobile landscape
+  @media screen and (max-width: 720px) {
+    grid-template-columns: 1fr;
+    margin-top: sizes.$s;
+  }
+}
