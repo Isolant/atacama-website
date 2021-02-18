@@ -86,6 +86,7 @@ const codeLatLng = (lat, lng) => {
         console.warn("No results found");
       }
     } else {
+      buyButton.classList.add('visible');
       console.error("Geocoder failed due to: " + status);
     }
   });
