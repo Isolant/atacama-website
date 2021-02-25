@@ -71,7 +71,7 @@ const codeLatLng = (lat, lng) => {
         const location = results[0].formatted_address;
 
         // For debugging purposes
-        console.info(`Unformatted data: ${results[0]}`);
+        console.info(results[0]);
         console.info(`Formatted location: ${location}`);
 
         // Array to hold the cities
