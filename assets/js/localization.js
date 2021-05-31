@@ -87,35 +87,27 @@ const checkProvince = (locationData) => {
   // Array with provinces
   const validProvinces = ['Provincia de Buenos Aires', 'Buenos Aires', 'Ciudad Autónoma de Buenos Aires', 'Ciudad Autonoma de Buenos Aires'];
 
-  // Loop through the location
-  locationData.map(addressComponent => {
-    // Search for the province in the address components. 
-    validProvinces.some(province => {
-      // If it's a valid province, we check the city
-      if(addressComponent.long_name === province) {
-        checkCity(locationData);
-      } else {
-        return;
-      }
-    });
-  });
+  // Loop through the location and check if the province is valid
+  const isProvinceValid = locationData.filter(addressComponent => validProvinces.find(province => (addressComponent.long_name === province)));
+
+  // If the province is valid, we check the city. If not, we exit the function
+  if(isProvinceValid.length) {
+    checkCity(locationData)
+  } else {
+    return;
+  }
 }
 
 // Function to check the city
 const checkCity = (locationData) => {
   // Array to hold the cities
-  const cities = ['Belén de Escobar', 'Belen de Escobar', 'Escobar', 'Berazategui', 'Berisso', 'Brandsen', 'Campana', 'Cañuelas', 'Canuelas', 'Ezeiza', 'Florencio Varela', 'General Las Heras', 'Gral. Las Heras', 'Las Heras', 'General Rodríguez', 'General Rodriguez', 'Gral. Rodríguez', 'Gral. Rodriguez', 'Ciudad de Hurlingham', 'Hurlingham', 'Ituzaingó', 'Ituzaingo', 'José C. Paz', 'Jose C. Paz', 'Lanús', 'Lanus', 'La Plata', 'Luján', 'Lujan', 'Marcos Paz', 'Merlo', 'Moreno', 'Morón', 'Moron', 'Pilar', 'Quilmes', 'San Fernando de la Buena Vista', 'San Fernando', 'San Isidro', 'San Martín', 'San Martin', 'Martínez', 'Martinez', 'San Miguel', 'Ciudad de San Vicente', 'San Vicente', 'Tigre', 'Vicente López', 'Vicente Lopez', 'Zárate', 'Zarate', 'Malvinas Argentinas', 'Almirante Brown', 'Ciudad Autónoma de Buenos Aires', 'Ciudad Autonoma de Buenos Aires', 'CABA', 'Capital Federal', 'Capital', 'Esteban Echeverría', 'Esteban Echeverria', 'Lomas de Zamora'];
+  const validCities = ['Belén de Escobar', 'Belen de Escobar', 'Escobar', 'Berazategui', 'Berisso', 'Brandsen', 'Campana', 'Cañuelas', 'Canuelas', 'Ezeiza', 'Florencio Varela', 'General Las Heras', 'Gral. Las Heras', 'Las Heras', 'General Rodríguez', 'General Rodriguez', 'Gral. Rodríguez', 'Gral. Rodriguez', 'Ciudad de Hurlingham', 'Hurlingham', 'Ituzaingó', 'Ituzaingo', 'José C. Paz', 'Jose C. Paz', 'Lanús', 'Lanus', 'La Plata', 'Luján', 'Lujan', 'Marcos Paz', 'Merlo', 'Moreno', 'Morón', 'Moron', 'Pilar', 'Quilmes', 'San Fernando de la Buena Vista', 'San Fernando', 'San Isidro', 'San Martín', 'San Martin', 'Martínez', 'Martinez', 'San Miguel', 'Ciudad de San Vicente', 'San Vicente', 'Tigre', 'Vicente López', 'Vicente Lopez', 'Zárate', 'Zarate', 'Malvinas Argentinas', 'Almirante Brown', 'Ciudad Autónoma de Buenos Aires', 'Ciudad Autonoma de Buenos Aires', 'CABA', 'Capital Federal', 'Capital', 'Esteban Echeverría', 'Esteban Echeverria', 'Lomas de Zamora'];
 
-  // Loop through the location
-  locationData.map(addressComponent => {
-    // Search for the city in the address components. 
-    cities.some(city => {
-      if(addressComponent.long_name === city) {
-        resultContainer.innerText = `Estás en: ${city}, una localidad en la que funciona el e-commerce`;
-        return;
-      }
-    });
-  });
+  // Loop through the location and check if the city is valid
+  const isCityValid = locationData.filter(addressComponent => validCities.find(city => (addressComponent.long_name === city)));
+
+  // If the city is valid, we show the button
+  isCityValid.length ? buyButton.classList.add('visible') : '';
 }
 
 // Initialize the fn
