@@ -1,0 +1,98 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prueba Localizacion</title>
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+  <!-- styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body id="top">
+  <section class="main">
+    <h1>Tu locaci&oacute;n es:</h1>
+    <div class="location"></div>
+    <h2 class="result"></h2>
+  </section>
+  <script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdXfWHT6Teb2rZPwlzI8ko1rZ1FTGMKdo"></script>
+  <script>
+    const locationContainer = document.querySelector('.location');
+    const resultContainer = document.querySelector('.result');
+
+    // We check if the geolocation functionality is supported by the browser
+    const getLocation = () => {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(geoSuccess, geoError);
+      } else {
+        alert("La geolocalización no funciona en este navegador.");
+      }
+    }
+
+    // Function to get the coordinates for the user
+    const geoSuccess = (position) => {
+      const lat = position.coords.latitude;
+      const lng = position.coords.longitude;
+      codeLatLng(lat, lng);
+    }
+
+    // Error handling
+    const geoError = () => {
+      alert("Falló el geolocalizador.");
+    }
+
+    // Initialize geocoder and get the location
+    let geocoder;
+    const initialize = () => {
+      geocoder = new google.maps.Geocoder();
+      getLocation();
+    }
+
+    // Transform the lat and lng into a comprehensive city
+    const codeLatLng = (lat, lng) => {
+      const latlng = new google.maps.LatLng(lat, lng);
+
+      geocoder.geocode({ 'latLng': latlng }, function (results, status) {
+        if (status == google.maps.GeocoderStatus.OK) {
+          if (results[1]) {
+            // Get the location
+            const location = results[0].address_components;
+
+            // Show the location on the browser
+            location.map(addressComponent => {    
+              const paragraph = document.createElement('p');
+              paragraph.innerText = addressComponent.long_name;
+              locationContainer.appendChild(paragraph);
+            })
+
+            // Array to hold the cities
+            const cities = ['Belén de Escobar', 'Belen de Escobar', 'Escobar', 'Berazategui', 'Berisso', 'Brandsen', 'Campana', 'Cañuelas', 'Canuelas', 'Ezeiza', 'Florencio Varela', 'General Las Heras', 'Gral. Las Heras', 'Las Heras', 'General Rodríguez', 'General Rodriguez', 'Gral. Rodríguez', 'Gral. Rodriguez', 'Ciudad de Hurlingham', 'Hurlingham', 'Ituzaingó', 'Ituzaingo', 'José C. Paz', 'Jose C. Paz', 'Lanús', 'Lanus', 'La Plata', 'Luján', 'Lujan', 'Marcos Paz', 'Merlo', 'Moreno', 'Morón', 'Moron', 'Pilar', 'Quilmes', 'San Fernando de la Buena Vista', 'San Fernando', 'San Isidro', 'San Martín', 'San Martin', 'Martínez', 'Martinez', 'San Miguel', 'Ciudad de San Vicente', 'San Vicente', 'Tigre', 'Vicente López', 'Vicente Lopez', 'Zárate', 'Zarate', 'Malvinas Argentinas', 'Almirante Brown', 'Ciudad Autónoma de Buenos Aires', 'Ciudad Autonoma de Buenos Aires', 'CABA', 'Capital Federal', 'Capital', 'Esteban Echeverría', 'Esteban Echeverria', 'Lomas de Zamora'];
+
+            // Loop through the location
+            location.map(addressComponent => {
+              // Search for the city in the location components. 
+              cities.some(city => {
+                if(addressComponent.long_name === city) {
+                  resultContainer.innerText = `Estás en: ${city}, una localidad en la que funciona el e-commerce`;
+                  return;
+                }
+              });
+            });
+          }
+        } else {
+          alert("El geolocalizador falló debido a: " + status);
+        }
+      });
+    }
+
+    // Initialize the fn
+    initialize();
+  </script>
+</body>
+
+</html>
