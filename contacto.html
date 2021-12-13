@@ -98,7 +98,10 @@
       <strong>Complet&aacute; tus datos y contactate con nosotros.</strong>
     </p>
     <div class="wrapper">
-      <form action="assets/php/mail.php" class="contact-form" method="post">
+      <form action="/gracias.html" data-netlify="true" name="atacama-contact-form" method="POST" class="contact-form" netlify-honeypot="bot-field">
+        <p class="hidden">
+          <label>No completes este campo si sos humano: <input name="bot-field" /></label>
+        </p>
         <div class="input-container">
           <label for="name">Nombre</label>
           <input type="text" name="name" id="name" placeholder="Por favor, completá tu nombre acá" required>
