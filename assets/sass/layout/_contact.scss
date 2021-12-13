@@ -13,6 +13,10 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: sizes.$m;
 
+  .hidden {
+    display: none;
+  }
+
   .input-container {
     label {
       display: block;

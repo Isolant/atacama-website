@@ -945,6 +945,9 @@ footer .wrapper .social-networks-container ul li:first-child {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 3rem;
 }
+.contact-form .hidden {
+  display: none;
+}
 .contact-form .input-container label {
   display: block;
   color: #353132;
