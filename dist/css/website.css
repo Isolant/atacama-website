@@ -1180,6 +1180,8 @@ footer .wrapper .social-networks-container ul li:first-child {
   margin-right: 1rem;
 }
 .security .wrapper .recommendations li .icon svg {
+  position: relative;
+  top: -1px;
   width: 24px;
 }
 .security .wrapper .recommendations li .text {
@@ -1250,6 +1252,9 @@ footer .wrapper .social-networks-container ul li:first-child {
 }
 .download-list li .text a svg {
   margin-right: 0.75rem;
+}
+.download-list li .icon img {
+  margin: auto;
 }
 @media screen and (max-width: 1200px) {
   .download-list li {

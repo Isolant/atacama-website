@@ -33,8 +33,10 @@
           align-items: center;
           justify-content: center;
           margin-right: sizes.$xxs;
-
+          
           svg {
+            position: relative;
+            top: -1px;
             width: 24px;
           }
         }
