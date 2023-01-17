@@ -22,7 +22,7 @@
 
 .video {
   .wrapper {
-    .text-container {
+    .text-container, .video-container {
       padding-top: sizes.$l;
 
       iframe {
@@ -71,6 +71,13 @@
         }
       }
     }
+
+    .video-container {
+      max-width: 760px;
+      margin: auto;
+      padding-top: 0;
+      padding-bottom: sizes.$l;
+    }
   }
 
   // iPad portrait
@@ -85,10 +92,10 @@
     }
   }
   
-  // Mobile landscap
+  // Mobile landscape
   @media screen and (max-width: 720px) {
     .wrapper {
-      .text-container {
+      .text-container, .video-container {
         iframe {
           height: 360px;
         }
@@ -104,7 +111,7 @@
   // Mobile portrait
   @media screen and (max-width: 540px) {
     .wrapper {
-      .text-container {
+      .text-container, .video-container {
         iframe {
           height: 260px;
         }
